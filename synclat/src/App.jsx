@@ -1,12 +1,14 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import { HomePage } from "./Pages/HomePage";
+import { AuthPage } from "./Pages/AuthPage";
 
 function App() {
   return (
-    <>
-      <div>
-        <a href="http://">Entorno</a>
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/auth" element={<AuthPage />} />
+    </Routes>
   );
 }
 
