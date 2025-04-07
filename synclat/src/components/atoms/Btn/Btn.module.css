@@ -1,4 +1,6 @@
 .btn{
+  width: var(--width,100%);
+  height: var(--height,100%);
   display: flex;
   justify-content: center;
   align-items: center;
